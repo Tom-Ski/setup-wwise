@@ -1,4 +1,5 @@
 import { createVerify } from "node:crypto";
+import fetch from "node-fetch";
 
 const ENDPOINT_LOGIN =
   "https://www.audiokinetic.com/wwise/launcher/?action=login";
@@ -40,7 +41,7 @@ interface ProductData {
   }[];
 }
 
-async function decodeResponse(response: Response): Promise<any> {
+async function decodeResponse(response: any): Promise<any> {
   if (!response.ok) {
     throw new Error(`Unsuccessful status ${response.status}.`);
   }
