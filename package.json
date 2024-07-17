@@ -5,7 +5,7 @@
   "author": "mashizora",
   "license": "MIT",
   "description": "Set up your GitHub Actions workflow with a specific version of Wwise SDK.",
-  "repository": "github:mashizora/setup-wwise",
+  "repository": "github:tom-ski/setup-wwise",
   "keywords": [
     "actions",
     "setup",
@@ -21,7 +21,7 @@
     "semver": "^7.6.2"
   },
   "devDependencies": {
-    "@types/node": "^20.14.9",
+    "@types/node": "^16.18.102",
     "@types/semver": "^7.5.8",
     "esbuild": "^0.23.0"
   }
